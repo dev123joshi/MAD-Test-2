@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Your Travel Profile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Preferred Distance Unit"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbKm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kilometers (Km)"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbMiles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Miles"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temperature Unit"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgTemperature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbCelsius"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Celsius (°C)"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbFahrenheit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fahrenheit (°F)"/>
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cbAlerts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Receive Travel Alerts"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnSaveProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE PROFILE"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</ScrollView>
